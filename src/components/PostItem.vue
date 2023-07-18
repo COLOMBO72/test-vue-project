@@ -3,6 +3,7 @@
     <div><b>{{ post.title }}: </b>{{ post.body }}</div>
     <div class="post__buttons">
       <my-button @click="$emit('remove',post)" style="background-color: rgb(218, 143, 143);">Delete</my-button>
+      <my-button @click="$router.push(`/posts/${post.id}`)">Открыть</my-button>
     </div>
   </div>
 </template>
